@@ -69,8 +69,9 @@ lottie.loadAnimation({
 });
 
 ```
+---
 
-git clone https://github.com/yourusername/portfolio-lottie.git
-cd portfolio-lottie
+- git clone https://github.com/yourusername/portfolio-lottie.git
+- cd portfolio-lottie
 
 
