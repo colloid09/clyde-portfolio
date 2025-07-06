@@ -71,7 +71,8 @@ lottie.loadAnimation({
 ```
 ---
 
-- git clone https://github.com/yourusername/portfolio-lottie.git
-- cd portfolio-lottie
+## 📥 Clone Repository
+- git clone https://github.com/yourusername/portfolio.git
+- cd portfolio
 
 
