@@ -46,3 +46,26 @@ This is a responsive **portfolio website** developed using **HTML**, **CSS**, an
 │   └── animations/      # Lottie JSON animation files
 └── README.md            # This file
 ```
+
+---
+
+## 📦 Lottie Integration
+
+To use Lottie animations in your site:
+
+1. **Include the Lottie CDN:**
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+
+<div id="lottie-container" style="width:300px; height:300px;"></div>
+
+lottie.loadAnimation({
+  container: document.getElementById('lottie-container'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'assets/animations/your-animation.json' // Replace with your JSON file
+});
+
+```
