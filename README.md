@@ -6,9 +6,6 @@ This is a responsive **portfolio website** developed using **HTML**, **CSS**, an
 
 ## 📸 Demo
 
-> 🔗 [Live Preview](https://your-live-portfolio-link.com)  
-> *(Replace with your deployed site link)*
-
 ![image](https://github.com/user-attachments/assets/3356184c-9c18-4520-a7b3-9fcad8122539)
 
 
