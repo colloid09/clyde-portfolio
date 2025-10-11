@@ -3,111 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clyde Portfolio</title>
+    <title>Clyde Charles</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js" type="module"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav id="navbar">
-        <a href="#" class="logo">CLYDE<span> CHARLES</span></a>
+        <div class="logo">Clyde Charles</div>
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
 
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="close-btn" id="closeBtn">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mobile-nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="floating-elements" id="floating-elements"></div>
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="fade-in">Hi, I'm <span>Clyde Charles</span></h1>
-            <h2 class="fade-in delay-1">I'm a <span class="typed-text"></span></h2>
-            <p class="fade-in delay-2">Passionate developer specializing in Python, cloud architecture, and DevOps. I build scalable solutions and automate processes to make technology work smarter.</p>
-            <div class="hero-btns fade-in delay-3">
-                <a href="https://github.com/colloid09" class="btn btn-primary" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="./assets/resume/clydeupdated.pdf" class="btn btn-secondary">
-                    <i class="fas fa-download"></i> Resume
-                </a>
+            <h1>Hi, I'm <span>Clyde Charles Coelho</span></h1>
+            <div class="typewriter">
+                <span class="typewriter-text" id="typewriter"></span>
             </div>
-            <div class="social-icons fade-in delay-4">
-                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <p>Fresher Python developer with a passion for clean code and problem-solving. Exploring DevOps and modern workflows to grow as a software developer.</p>
+            <div class="btn-group">
+                <a href="https://github.com/colloid09" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                <a href="./assets/resume/clydecharlescoelho_mca_sjec.pdf" class="btn btn-secondary"><i class="fas fa-download"></i> Download Resume</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/colloid09"><i class="fab fa-github"></i></a>
+                <a href="linkedin.com/in/clydecharlescoelho"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/clyde_.9?igsh=d2NuNHFvc3BheWty"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-        <div class="hero-animation fade-in delay-5">
-            <dotlottie-player
-                    src="https://lottie.host/c73d2e95-ab49-4c49-9547-57c7d0349595/BJKC7JwCxj.lottie"
-                    background="transparent"
-                    speed="1"
-                    style="width: 500px; height: 500px"
-                    loop
-                    autoplay>
-            </dotlottie-player>
+        <div class="hero-animation">
+            <dotlottie-wc
+                src="https://lottie.host/674a70e9-7a71-4a1e-8436-3d8c074ed843/OFtuaz5UIw.lottie"
+                style="width: 400px;height: 400px"
+                autoplay
+                loop >
+            </dotlottie-wc>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="section" id="about">
+    <section id="about" class="about">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <div class="about-img">
-                <img src="assets/images/clyde.jpg" alt="Developer Photo">
+                <img src="./assets/images/clyde2.jpg" alt="Clyde Charles" class="profile-img">
             </div>
             <div class="about-text">
-                <h3>Hi, I'm Clyde Charles Coelho</h3>
-                <p>With over 4 years of experience in software development, I specialize in building robust Python applications and designing scalable cloud architectures. My passion lies in creating efficient systems that solve real-world problems while maintaining clean, maintainable code.</p>
-                <p>I thrive in collaborative environments and enjoy mentoring junior developers. When I'm not coding, you can find me contributing to open-source projects or exploring new technologies in the DevOps space.</p>
-                
+                <p>I am a passionate fresher specializing in Python programming, with a growing interest in DevOps and software development. Skilled in building clean, efficient, and scalable code, I enjoy learning new technologies and applying them to real-world problems. My goal is to kickstart my career as a software developer while continuously expanding my knowledge in automation, cloud practices, and modern development workflows.</p>
+                <br><p>I enjoy working on challenging projects that push my boundaries and allow me to learn new technologies. When I'm not coding, you can find me contributing to open-source projects or exploring new frameworks.</p>
+                <br>
                 <div class="education">
-                    <h4>Education</h4>
+                    <h3>Education</h3>
                     <div class="education-item">
-                        <h5>Master of Computer Application</h5>
-                        <p>St. Joseph Engineering College • 2024-Present</p>
+                        <h3>Master of Computer Application </h3>
+                        <p>St. Joseph Engineering College, Mangalore | 2024- Present</p>
                     </div>
                     <div class="education-item">
-                        <h5>Bachelor of Computer Application</h5>
-                        <p>St. Aloysius College (Autonomous) • 2021-2024</p>
+                        <h3>Bachelor of Computer Application</h3>
+                        <p>St. Aloysius College (Autonomous), Mangalore | 2021-2024</p>
                     </div>
                 </div>
-                
-                <div class="skills">
-                    <h4>Languages & Tools</h4>
-                    <div class="skills-container">
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-java"></i>
-                            <span>Java</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-c"></i>
-                            <span>C</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        
-                        
+            </div>
+        </div>
+        
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-icons">
+                    <div class="skill-item">
+                        <i class="fab fa-python skill-icon"></i>
+                        <span class="skill-name">Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-java skill-icon"></i>
+                        <span class="skill-name">Java</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database skill-icon"></i>
+                        <span class="skill-name">SQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <span class="skill-name">HTML</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <span class="skill-name">CSS</span>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <i class="fab fa-js-square skill-icon"></i>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                <div class="skill-icons">
+                    <div class="skill-item">
+                        <i class="fab fa-python skill-icon"></i>
+                        <span class="skill-name">Django</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-camera skill-icon"></i>
+                        <span class="skill-name">OpenCV</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-chart-line skill-icon"></i>
+                        <span class="skill-name">MatPlot</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-table skill-icon"></i>
+                        <span class="skill-name">Pandas</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-window-restore skill-icon"></i>
+                        <span class="skill-name">PyQt5</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools</h3>
+                <div class="skill-icons">
+                    <div class="skill-item">
+                        <i class="fas fa-code skill-icon"></i>
+                        <span class="skill-name">PyCharm</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-github skill-icon"></i>
+                        <span class="skill-name">GitHub</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code skill-icon"></i>
+                        <span class="skill-name">VSCode</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt skill-icon"></i>
+                        <span class="skill-name">Git</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> Databases</h3>
+                <div class="skill-icons">
+                    <div class="skill-item">
+                        <i class="fas fa-database skill-icon"></i>
+                        <span class="skill-name">MySQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database skill-icon"></i>
+                        <span class="skill-name">MongoDB</span>
                     </div>
                 </div>
             </div>
@@ -115,105 +189,135 @@
     </section>
 
     <!-- Projects Section -->
-    
-    <section class="section" id="projects">
+    <section id="projects" class="projects">
         <h2 class="section-title">My Projects</h2>
-        <div class="projects-container">
+        <div class="projects-grid">
             <div class="project-card">
-                <img src="./assets/projects/vrsm.png" class="project-img" alt="Project 1">
-                <div class="project-info">
-                    <h3>Vehicle Rental System</h3>
-                    <p>A web-based to manage vehicle bookings, availability, and user records efficiently.</p>
-                    <div class="project-tools">
-                        <span class="tool-tag python"><i class="fa-brands fa-html5"></i> html</span>
-                        <span class="tool-tag aws"><i class="fa-brands fa-css3"></i> css</span>
-                        <span class="tool-tag terraform"><i class="fa-brands fa-js"></i> js</span>
-                        <span class="tool-tag docker"><i class="fa-brands fa-php"></i> php</span>
-                        <span class="tool-tag docker"><i class="fa-solid fa-database"></i> sql</span>
+                <img src="./assets/projects/vrsm.png" alt="Project 1" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">Vehicle Rental Management System</h3>
+                    <p class="project-desc">A web-based application to manage vehicle bookings, availability, and user records efficiently.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">BootStrap</span>
+                        <span class="tech-tag">Php</span>
+                        <span class="tech-tag">MySQL</span>
                         
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/colloid09/vehicle-rental-system" class="btn btn-primary"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/colloid09/vehicle-rental-system" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     </div>
                 </div>
             </div>
+            
             <div class="project-card">
-                <img src="./assets/projects/carpk.jpg" class="project-img" alt="Project 2">
-                <div class="project-info">
-                    <h3>Car Parking System</h3>
-                    <p>Car Parking Management system using Java Swing and OOP's Concepts</p>
-                    <div class="project-tools">
-                        <span class="tool-tag react"><i class="fa-brands fa-java"></i> java</span>
+                <img src="./assets/projects/carpk.jpg" alt="Project 2" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">Car Parking System</h3>
+                    <p class="project-desc">Car Parking Management system using Java Swing and OOP's Concepts (Prototype)</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/colloid09/Car-Parking-System" class="btn btn-primary"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/colloid09/Chat_Application" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     </div>
                 </div>
             </div>
+            
             <div class="project-card">
-                <img src="./assets/projects/real time.png" class="project-img" alt="Project 3">
-                <div class="project-info">
-                    <h3>Real-Time Chat Application</h3>
-                    <p>Chat Application for developed using Python and Django</p>
-                    <div class="project-tools">
-                        <span class="tool-tag python"><i class="fab fa-python"></i> python</span>
-                        <span class="tool-tag tensorflow"><i class="fa-solid fa-code"></i> django</span>
-                        <span class="tool-tag docker"><i class="fa-solid fa-database"></i> sql</span>
+                <img src="./assets/projects/real time.png" alt="Project 3" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">Real-Time Chat Application</h3>
+                    <p class="project-desc">Developed a real-time chat application using Python and Django, integrating WebSockets (Django Channels) for instant communication.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/colloid09/Chat_Application" class="btn btn-primary"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/colloid09/Car-Parking-System" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     </div>
                 </div>
             </div>
+
+            <div class="project-card">
+                <img src="./assets/projects/alcohol.jpg" alt="Project 3" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">Alochol Detection System</h3>
+                    <p class="project-desc">An Alcohol Detection System designed to improve road safety by detecting alcohol consumption in drivers.
+The system uses an MQ-3 alcohol sensor to measure the concentration of alcohol in breath and takes preventive measures such as triggering alarms and sending alerts.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">Arduino IDE</span>
+                        <span class="tech-tag">MQ-3 Sensor</span>
+                        <span class="tech-tag">Buzzer</span>
+                        <span class="tech-tag">LED</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/colloid09/alcohol_detection_system" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="./assets/projects/bookmark.png" alt="Project 3" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">MarkVault (BookMark Management System)</h3>
+                    <p class="project-desc">Developed using Django, Bootstrap, and SQLite3, it allows users to save, edit, delete, and search bookmarks quickly with an intuitive interface.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">SQLite</span>
+                        
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/colloid09/Car-Parking-System" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="section" id="contact">
+    <section id="contact" class="contact">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-container">
             <div class="contact-info">
-                <h3>Let's Connect</h3>
-                <div class="contact-social">
-                    <a href="https://github.com" class="social-item" target="_blank">
-                        <i class="fab fa-github"></i>
-                        <span>github.com/colloid09</span>
-                    </a>
-                    <a href="https://linkedin.com" class="social-item" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                        <span>linkedin.com/in/clydecharlescoelho</span>
-                    </a>
-                    <a href="https://instagram.com" class="social-item" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        <span>@clyde_.9</span>
-                    </a>
-                    <a href="https://twitter.com" class="social-item" target="_blank">
-                        <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
-                        <span>@colloid_09</span>
-                    </a>
+                <p class="contact-text">I'm always open to discussing new opportunities, creative ideas, or partnerships to bring exciting projects to life.</p>
+                <div class="social-contact">
+                    <a href="https://github.com/colloid09"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/clydecharlescoelho"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/clyde_.9"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/colloid_09?t=Xc90vh3ZVP3yVHFU34SDOg&s=09"><i class="fa-brands fa-x-twitter"></i></i></a>
+                    <a href="https://discord.gg/zz9CQT5A"><i class="fab fa-discord"></i></a>
                 </div>
             </div>
             <div class="contact-form">
-                <form action="https://formsubmit.co/clydecc09@gmail.com" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
             </div>
         </div>
     </section>
@@ -221,6 +325,7 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
+            <div class="footer-logo">Clyde Charles</div>
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -233,84 +338,116 @@
 
     <script>
         // Typewriter Effect
-        document.addEventListener('DOMContentLoaded', function() {
-            const typed = new Typed('.typed-text', {
-                strings: ['Python Developer', 'Java Developer', 'DevOps Engineer'],
-                typeSpeed: 50,
-                backSpeed: 30,
-                loop: true
-            });
+        const typewriterText = document.getElementById('typewriter');
+        const texts = ['Python Developer', 'Exploring DevOps tools and workflows', 'Passionate about automation & cloud practices'];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 10;
 
-            // Floating Elements Animation
-            const floatingContainer = document.getElementById('floating-elements');
-            for (let i = 0; i < 50; i++) {
-                const span = document.createElement('span');
-                span.style.left = Math.random() * 100 + '%';
-                span.style.top = Math.random() * 100 + '%';
-                span.style.width = Math.random() * 20 + 10 + 'px';
-                span.style.height = span.style.width;
-                span.style.animationDelay = Math.random() * 15 + 's';
-                span.style.animationDuration = Math.random() * 15 + 10 + 's';
-                floatingContainer.appendChild(span);
+        function typeWriter() {
+            const currentText = texts[textIndex];
+            
+            if (isDeleting) {
+                typewriterText.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = 50;
+            } else {
+                typewriterText.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = 100;
             }
+            
+            if (!isDeleting && charIndex === currentText.length) {
+                isDeleting = true;
+                typingSpeed = 1000; // Pause at the end
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                typingSpeed = 500; // Pause before starting next text
+            }
+            
+            setTimeout(typeWriter, typingSpeed);
+        }
 
-            // Navbar Scroll Effect
+        // Start typewriter effect
+        setTimeout(typeWriter, 1000);
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Navigation
+        const menuBtn = document.querySelector('.menu-btn');
+        const mobileNav = document.getElementById('mobileNav');
+        const closeBtn = document.getElementById('closeBtn');
+        const overlay = document.getElementById('overlay');
+
+        function openMobileNav() {
+            mobileNav.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileNav() {
+            mobileNav.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        menuBtn.addEventListener('click', openMobileNav);
+        closeBtn.addEventListener('click', closeMobileNav);
+        overlay.addEventListener('click', closeMobileNav);
+
+        // Close mobile nav when clicking on a link
+        document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+            link.addEventListener('click', closeMobileNav);
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    entry.target.classList.remove('hidden');
                 }
             });
+        }, observerOptions);
 
-            // Smooth Scrolling for Anchor Links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+        // Observe elements for animation
+        document.querySelectorAll('section, .project-card, .skill-category').forEach(el => {
+            el.classList.add('hidden');
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                });
-            });
-
-            // Scroll Animation
-            const fadeElements = document.querySelectorAll('.fade-in');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate');
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            fadeElements.forEach(element => {
-                observer.observe(element);
+                }
             });
         });
     </script>
-    <script
-  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-  type="module"
-></script>
-<script>
-    document.querySelector('.contact-form form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const formData = new FormData(this);
-    const formObject = Object.fromEntries(formData.entries());
-    
-    // Send the email using a service like EmailJS or your own backend
-    // This is just a placeholder - you would need to implement the actual email sending
-    console.log('Form data:', formObject);
-    
-    // Show success message
-    alert('Message sent successfully!');
-    this.reset();
-    
-    // Or redirect to thank you page
-    // window.location.href = 'thank-you.html';
-});
-</script>
 </body>
 </html>
