@@ -6,7 +6,8 @@ This is a responsive **portfolio website** developed using **HTML**, **CSS**, an
 
 ## 📸 Demo
 
-![image](https://github.com/user-attachments/assets/3356184c-9c18-4520-a7b3-9fcad8122539)
+<img width="1892" height="856" alt="image" src="https://github.com/user-attachments/assets/429b7e48-a4d5-4669-a3ca-a159e105a057" />
+
 
 
 ---
